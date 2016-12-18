@@ -30,5 +30,13 @@ class Noeud{
 
   Noeud Noeud:: new_nd(int* a){
     Noeud objet(a);
+    fd=&objet;
+    return objet;
 
+  }
+
+  Noeud Noeud:: new_ng(int*a){
+    Noeud objet(a);
+    fg=&objet;
+    return objet;
   }
