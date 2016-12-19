@@ -3,7 +3,7 @@
 
 class Noeud{
 
-  Noeud:: Noeud(int* cle){
+  Noeud(int* cle){
     this<-cle=cle;
 	Noeud* fg=NULL;
 	Noeud* fd=NULL;
@@ -35,8 +35,11 @@ class Noeud{
 
   }
 
-  Noeud Noeud:: new_ng(int*a){
+  Noeud Noeud:: new_ng(int* a){
     Noeud objet(a);
     fg=&objet;
     return objet;
   }
+
+
+}

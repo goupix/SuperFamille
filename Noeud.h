@@ -1,7 +1,7 @@
 class Noeud {
 
-	private :
-		int* Cle;
+	protected :
+		int* cle;
 		Noeud* fg;
 		Noeud* fd;
 
@@ -9,8 +9,9 @@ class Noeud {
 	public :
 		
 
-		void new_ng()
-		Noeuds(int* cle);
+		void new_ng(int*a);
+        void new_nd(int*a);
+		Noeud(int* cle);
 
 
 		//getters
@@ -19,7 +20,7 @@ class Noeud {
 		Noeud* Get_fd();
 
 		//setters
-		void Set_Cle(int* a);
+		void Set_cle(int* a);
 		void Set_fg(Noeud* a);
 		void Set_fd(Noeud* a);
 
