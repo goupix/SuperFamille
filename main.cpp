@@ -1,22 +1,19 @@
 #include<iostream>
 #include"Noeud.h"
+using namespace std;
 
-
-void creation(int taille,Noeud* pa){
+void creation(){
   int* cle=NULL;
-  for(int i=0; i<taille; i++){
-    pa[i]=Noeud(cle);
-    pa[i+1]=pa[i].new_ng(cle);
-    pa[i+2]=pa[i].new_nd(cle);
-  }
-
-
-
+  Noeud arbre_vide(cle);
+  cout<<arbre_vide.Get_cle()<<endl;
 }
 
+
+
+
+
 int main(){
-  Noeud arbre[];
-  creation(6, &arbre);
-  std::cout<<arbre[0].cle<<std::endl;
+  creation();
+  cout<<"coucou"<<endl;
   
 }

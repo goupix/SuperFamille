@@ -9,13 +9,13 @@ class Noeud {
 	public :
 		
 
-		void new_ng(int*a);
-        void new_nd(int*a);
+		Noeud* new_ng(int* a);
+        Noeud* new_nd(int* a);
 		Noeud(int* cle);
 
 
 		//getters
-		int* Get_Cle();
+		int* Get_cle();
 		Noeud* Get_fg();
 		Noeud* Get_fd();
 
@@ -24,4 +24,4 @@ class Noeud {
 		void Set_fg(Noeud* a);
 		void Set_fd(Noeud* a);
 
-
+};
