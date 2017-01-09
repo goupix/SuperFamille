@@ -1,6 +1,6 @@
+
 #include<iostream>
 #include"Noeud.h"
-
 using namespace std;
 
 Noeud creation(){
@@ -29,6 +29,17 @@ Noeud* recherche(int* r,Noeud p){
       return pN;
     }
   }
+}
+
+void insertion(cle){
+  Noeud_pere=*recherche(cle);
+  if(cle<*Noeud_pere.cle){
+    Noeud_pere.new_ng(cle);  
+  }
+  else{
+    Noeud_pere.new_nd(cle);
+  }
+ 
 }
 
 int main(){
