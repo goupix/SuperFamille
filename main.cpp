@@ -2,18 +2,28 @@
 #include"Noeud.h"
 using namespace std;
 
-void creation(){
+Noeud creation(){
   int* cle=NULL;
   Noeud arbre_vide(cle);
-  cout<<arbre_vide.Get_cle()<<endl;
+  return arbre_vide;
 }
 
 
+void insertion(cle){
+  Noeud_pere=recherche(cle);
+  if(cle<*Noeud_pere.cle){
+    Noeud_pere.new_ng(cle);  
+  }
+  else{
+    Noeud_pere.new_nd(cle);
+  }
+ 
+}
 
 
 
 int main(){
   creation();
-  cout<<"coucou"<<endl;
+ 
   
 }
