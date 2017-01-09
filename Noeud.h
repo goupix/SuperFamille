@@ -9,8 +9,8 @@ class Noeud {
 	public :
 		
 
-		Noeud* new_ng(int* a);
-        Noeud* new_nd(int* a);
+		void new_ng(int* a);
+        void new_nd(int* a);
 		Noeud(int* cle);
 
 

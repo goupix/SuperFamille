@@ -28,17 +28,16 @@
     fd=a;
   }
 
-  Noeud* Noeud:: new_nd(int* a){
+  void  Noeud:: new_nd(int* a){
     Noeud objet(a);
     fd=&objet;
-    return fd;
+    
 
   }
 
-  Noeud* Noeud:: new_ng(int* a){
+  void  Noeud:: new_ng(int* a){
     Noeud objet(a);
     fg=&objet;
-    return fg;
   }
 
 
