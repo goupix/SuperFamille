@@ -13,7 +13,7 @@ Noeud* recherche(int* r,Noeud p){
   Noeud* pN = &p;
   Noeud N(NULL);
   bool t = false; 
-  while(r==false){
+  while(t==false){
     N=*pN;
     if(*(N.Get_cle())==*r){
       t=true;
@@ -31,9 +31,10 @@ Noeud* recherche(int* r,Noeud p){
   }
 }
 
-void insertion(cle){
-  Noeud_pere=*recherche(cle);
-  if(cle<*Noeud_pere.cle){
+void insertion(int* cle, Noeud N){
+  Noeud Noeud_pere=*recherche(cle,N);
+
+  if(*cle<*Noeud_pere.Get_cle()){
     Noeud_pere.new_ng(cle);  
   }
   else{
@@ -43,6 +44,8 @@ void insertion(cle){
 }
 
 int main(){
-  Noeud pere=creation();
-  
+  Noeud racine=creation();
+  int a=8;
+  Noeud* fin= recherche(&a,racine);
+  cout<<fin<<endl;
 }
