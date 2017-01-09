@@ -20,10 +20,19 @@ void insertion(cle){
  
 }
 
+void verification(Noeud arbre){
+	if (arbre.Get_cle() == NULL and arbre.Get_fg() == NULL and arbre.Get_fd() == NULL) {
+    cout<< "L'arbre est vide" <<endl;
+	}
+	else {
+		cout<< "L'arbre n'est pas vide" <<endl;
+	}
+}
+
 
 
 int main(){
   creation();
- 
-  
+  cout<<"coucou"<<endl;
+	verification(creation());
 }
