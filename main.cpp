@@ -9,6 +9,15 @@ Noeud creation(){
   return arbre_vide;
 }
 
+void verification(Noeud arbre){
+	 	if (arbre.Get_cle() == NULL and arbre.Get_fg() == NULL and arbre.Get_fd() == NULL) {
+		     cout<< "L'arbre est vide" <<endl;
+		 	}
+		 	else {
+			 		cout<< "L'arbre n'est pas vide" <<endl;
+			}
+}
+
 Noeud* recherche(int* r,Noeud p){
   Noeud* pN = &p;
   Noeud N(NULL);
